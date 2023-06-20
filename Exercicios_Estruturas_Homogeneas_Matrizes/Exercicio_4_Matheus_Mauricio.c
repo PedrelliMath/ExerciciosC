@@ -16,6 +16,9 @@ int main(void){
     }
     
     int option = -1;
+
+    printf("******************BEM VINDO AO GAVETEIRO VIRTUAL*********************\n");
+    printf("*****************SELECIONE UMA DAS OPCOES ABAIXO*********************\n");
     
     while(option != 0){
         
@@ -54,9 +57,14 @@ void adicionarValor(void){
     
     int linha = 0;
     int coluna = 0;
-    int valor = 0;
-    
-    printf("Digite a posicao que deseja adicionar formato [][] : ");
+    int quantidade = 0;
+
+    printf("*****************Esse e seu gaveteiro virtual*********************\n");
+    printf("****Cada gaveta representa a quantidade de roupas que tem dentro****\n\n");
+
+    mostraConteudo();
+
+    printf("\nDigite a posicao que deseja adicionar [0 ate 1]enter [0 ate 3]enter : ");
     
     while(1){
         
@@ -72,14 +80,18 @@ void adicionarValor(void){
     
     while(1){
         
-        scanf("%i", &valor);
+        scanf("%i", &quantidade);
         
-        if(valor > 5) printf("O valor não pode ser maior que 5!\n");
+        if(quantidade + gaveteiro[linha][coluna] > 5){
+
+            printf("A quantidade total nao pode ser mais do que 5! Digite novamente: \n");
+            mostraConteudo();
+        } 
         else break;
         
     }
     
-    gaveteiro[linha][coluna] += valor;
+    gaveteiro[linha][coluna] += quantidade;
     
 }
 
@@ -91,7 +103,7 @@ void removerValor(){
     
     while(1){
         
-        printf("Digite a posicao que deseja remover formato [][] : ");
+        printf("Digite a posicao que deseja remover [0 ate 1]enter [0 ate 3]enter : : ");
         
         scanf("%i %i", &linha, &coluna);
         
@@ -113,7 +125,7 @@ void removerValor(){
         
         if(quantidade > gaveteiro[linha][coluna]) {
             
-            printf("O valor não pode ser maior que o disponivel na gaveta!\n");
+            printf("O valor nao pode ser maior que o disponivel na gaveta! Digite outro: \n");
             mostraConteudo();
         }
         else break;
