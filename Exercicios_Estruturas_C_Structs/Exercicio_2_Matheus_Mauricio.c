@@ -1,3 +1,6 @@
+/*4. Construa um programa que define um tipo novo de dados, para uma estrutura de um animal,
+deverá conter atributos como: raça, cor, peso e sexo. Também uma função entrada de dados e uma função de saída de dados.*/
+
 #include <stdio.h>
 
 void menu(void);

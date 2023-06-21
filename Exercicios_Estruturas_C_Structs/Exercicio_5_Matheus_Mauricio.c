@@ -1,5 +1,8 @@
+/*5. Refaça o programa 4 de matrizes (Gaveteiro), utilizando uma estrutura chamada “Gavetas” 
+que terá os campos “Tipo” (ex: Calça, meia, etc) e a quantidade (0 a 5). Outra estrutura “Gaveteiro” deverá ser 
+declarada como do tipo struct que guarda uma matriz de “Gavetas”. Cada gaveta poderá ter apenas um tipo de roupa.*/
+
 #include <stdio.h>
-#include <string.h>
 
 int comparaStrings(const char string1[], const char string2[]);
 
@@ -13,6 +16,9 @@ struct Gaveteiro{
 
     struct Gavetas gavetas[2][4];
 };
+
+/*a. Adapte o programa para utilizar preferencialmente funções separadas para exibir 
+o tipo/ quantidade de roupas, o total disponível e para retirar e adicionar roupas*/
 
 struct Gaveteiro defineTipoDeRoupa(struct Gaveteiro gaveteiro){
 
