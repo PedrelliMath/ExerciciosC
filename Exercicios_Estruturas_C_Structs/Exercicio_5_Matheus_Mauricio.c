@@ -6,7 +6,7 @@ int comparaStrings(const char string1[], const char string2[]);
 struct Gavetas{
 
     char tipo[40];
-    int quantidade = 0;
+    int quantidade;
 };
 
 struct Gaveteiro{

@@ -1,3 +1,6 @@
+/*4. Faça um programa que utilize vetores para armazenar as temperaturas em diferentes pontos de um ambiente,
+ e calcule a temperatura média do ambiente como um todo.*/
+
 #include <stdio.h>
 
 int main(void){

@@ -1,5 +1,10 @@
+/*5. Criar um programa que leia uma palavra com fgets(), guarde na variável palavra e imprima na tela o seguinte texto (tudo na mesma linha):
+
+Saída ----> “Palavra <palavra> lida com fgets()”.
+
+(dica: Será necessário retirar o ‘\n’ ao final da variável <palavra>).*/
+
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void){
 

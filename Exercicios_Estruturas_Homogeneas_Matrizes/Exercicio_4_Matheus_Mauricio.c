@@ -1,3 +1,6 @@
+/*4. Faça um programa que simule um Gaveteiro com 8 gavetas no total, sendo 4 gavetas na 
+parte de cima e mais 4 gavetas na parte de baixo do móvel.*/
+
 #include <stdio.h>
 
 void mostraConteudo(void);
@@ -8,7 +11,7 @@ int gaveteiro[2][4];
 
 int main(void){
 
-    
+    //4.1) Você deve definir inicialmente a quantidade de roupas colocadas em cada gaveta (entre 0 e 5 roupas);
     for(int i = 0; i < 2; i++){
         for(int j = 0; j < 4; j++){
             gaveteiro [i][j] = 0;
@@ -17,6 +20,7 @@ int main(void){
     
     int option = -1;
 
+    //4.2) agora, deve ser solicitado ao usuário se ele deseja retirar ou adicionar roupas e a quantidade desejada.
     printf("******************BEM VINDO AO GAVETEIRO VIRTUAL*********************\n");
     printf("*****************SELECIONE UMA DAS OPCOES ABAIXO*********************\n");
     
@@ -78,6 +82,9 @@ void adicionarValor(void){
     
     printf("Agora digite o valor para inserir: ");
     
+    /*- Quando adicionar, não deve permitir adicionar uma quantidade maior que a disponível na gaveta
+    e também informar caso a gaveta esteja cheia (5 roupas). Deve atualizar e mostrar a nova quantidade 
+    de roupas disponível nas gavetas e no gaveteiro como um todo.*/
     while(1){
         
         scanf("%i", &quantidade);
@@ -119,6 +126,10 @@ void removerValor(){
     
     printf("Agora digite o valor para retirar: ");
     
+
+    /*- Quando retirar, não deve permitir retirar uma quantidade maior que a disponível na gaveta
+    e também informar caso a gaveta esteja vazia. Deve atualizar e mostrar a nova quantidade de roupas 
+    disponível nas gavetas e no gaveteiro como um todo.*/
     while(1){
         
         scanf("%i", &quantidade);

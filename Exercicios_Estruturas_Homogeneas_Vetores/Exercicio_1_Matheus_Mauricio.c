@@ -1,3 +1,7 @@
+/*1. Construa um algoritmo que leia (scanf) um vetor de 5 números inteiros e mostre a
+
+soma dos números e os valores do vetor. (Use forma contraída para realizar a soma).*/
+
 #include <stdio.h>
 
 int main(void){

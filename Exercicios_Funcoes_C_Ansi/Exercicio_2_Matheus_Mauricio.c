@@ -1,3 +1,6 @@
+/*2. Faça uma função que desenhe linhas de caracteres na tela, a função receberá como argumento o tipo de caractere,
+ a quantidade de caracteres a ser impressa e o número de linhas que deverá imprimir.*/
+
 #include <stdio.h>
 
 void printLinhas(int qLinhas, int qCaracteres, char caractere);

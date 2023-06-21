@@ -1,3 +1,5 @@
+/*2. Construa um algoritmo que leia um vetor de 5 números reais e mostre-os na ordem inversa.*/
+
 #include <stdio.h>
 
 int main(void){

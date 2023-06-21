@@ -1,3 +1,6 @@
+/*3. Fazer um programa que possibilite várias opções de cálculos a partir de um menu. 
+O programa chamará a função correspondente a cada cálculo.*/
+
 #include <stdio.h>
 
 void menu(void);
@@ -40,6 +43,7 @@ void menu(void){
     printf("[f] Sair\n");
 }
 
+//[ a ] S = 1/1 + 3/2 + 5/3+........+ 99/50
 void a(void){
 
     float result = 0;
@@ -60,6 +64,7 @@ void a(void){
 
 }
 
+//[ b ] S = 1/1 - 2/2 + 3/3 -..........- 10/10
 void b(void){
 
     float result = 0;
@@ -78,6 +83,8 @@ void b(void){
     fflush(stdin);
 }
 
+
+//[ c ] S = 1000/1 - 997/2 + 994/3.........
 void c(void){
 
     float result = 0;
@@ -97,6 +104,8 @@ void c(void){
     fflush(stdin);
 }
 
+
+//[ d ] S = 480/10 - 475/11 + 470/12 - .......
 void e(void){
 
     float result = 0;

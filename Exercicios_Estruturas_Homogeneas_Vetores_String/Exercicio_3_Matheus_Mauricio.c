@@ -1,3 +1,6 @@
+/*3. Faça um programa que possua um vetor de caracteres (aka. String) com 7 posições e valor inicial a palavra “OLA”. 
+O programa deve executar os seguintes passos:*/
+
 #include <stdio.h>
 
 int main(void){
@@ -7,6 +10,7 @@ int main(void){
 
     printf("%s \n", palavra);
 
+    //(a) Atribua manualmente um a um estes valores ao vetor: ‘b’, ‘r’, ‘a’, ‘s’, ‘i’, ‘l’,’\0’.
     palavra[0] = 'b';
     palavra[1] = 'r';
     palavra[2] = 'a';
@@ -17,12 +21,14 @@ int main(void){
 
     int i = 0;
 
+    //(b) Mostre na tela a palavra/vetor, utilizando WHILE() para imprimir letra por letra
     while(i < palavraLen){
         printf("%c\n", palavra[i]);
         i++;
     }
 
-    for(int i = 0; i < palavraLen; i++){
+    //(c) Converta a palavra para maiúsculo utilizando valores TABELA ASCII
+    for(int i = 0; i < palavraLen; i++){ 
         if(palavra[i] == '\0') break;
         palavra[i] -= 32;
         printf("%c\n", palavra[i]);
@@ -30,6 +36,7 @@ int main(void){
 
     printf("\n");
 
+    //(d) Substitua as letras ‘A’ pelo número 4 e “I’ pelo número 1
     for(int i = 0; palavra[i] != '\0'; i++){
         if(palavra[i] == 'A') palavra[i] = '4';
         if(palavra[i] == 'I') palavra[i] = '1';
@@ -39,6 +46,7 @@ int main(void){
 
     printf("\n");
 
+    //(e) Exclua a última letra da palavra, utilizando caractere terminador (identifica o final da String)
     palavra[palavraLen - 2] = '\0';
 
     for(int i = 0; palavra[i] != '\0'; i++){
@@ -47,6 +55,7 @@ int main(void){
 
     printf("\n");
 
+    //(f) Calcule o tamanho preenchido do Vetor (Tamanho da palavra), percorrendo-a com FOR
     int count = 0;
     for(int i = 0; palavra[i] != '\0'; i++){
         count++;
@@ -57,6 +66,7 @@ int main(void){
 
     char letras[3];
 
+    //(g) Leia (scanf) duas letras juntas (ex: “R4” em “BR4S1L”) e informe se encontrou ou não
     printf("Digite as letras: ");
     scanf("%s", letras);
 

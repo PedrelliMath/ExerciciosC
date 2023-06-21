@@ -1,3 +1,6 @@
+/*1. Criar um programa que armazene o nome e a idade de uma lista de pessoas em vetores, 
+e calcule a média de idade da lista. (ex: nomes[5][30] –> vetor de 5 nomes)*/
+
 #include <stdio.h>
 
 int main(void){

@@ -1,3 +1,6 @@
+/*5. Criar um programa que utilize vetores para representar uma pilha de pratos em um restaurante, 
+e permita adicionar ou remover pratos da pilha.*/
+
 #include <stdio.h>
 
 int main(void){
