@@ -146,7 +146,7 @@ void mostraTipoDeRoupa(struct Gaveteiro gaveteiro){
 
     while(1){
     	
-		scanf("%i %i", &linha, &coluna);
+	scanf("%i %i", &linha, &coluna);
 		
         if(linha > 1 || coluna > 3) printf("Essa gaveta nao existe, digite novamente!\n");
         else break; 
@@ -183,10 +183,10 @@ int main(void){
         switch(option){
 
             case 1: gaveteiro = defineTipoDeRoupa(gaveteiro); mostraGavetas(gaveteiro); break;
-            case 2: gaveteiro = insereRoupa(gaveteiro); mostraGavetas(gaveteiro);       break;
-            case 3: gaveteiro = RemoveRoupa(gaveteiro); mostraGavetas(gaveteiro);       break; 
-			case 4: mostraTipoDeRoupa(gaveteiro);     									break;
-            default: printf("Opcao Invalida"); 											break;       
+            case 2: gaveteiro = insereRoupa(gaveteiro); mostraGavetas(gaveteiro); break;
+            case 3: gaveteiro = RemoveRoupa(gaveteiro); mostraGavetas(gaveteiro); break; 
+	    case 4: mostraTipoDeRoupa(gaveteiro); break;
+            default: printf("Opcao Invalida"); break;       
         }
 
 
